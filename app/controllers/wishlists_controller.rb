@@ -46,6 +46,6 @@ class WishlistsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def wishlist_params
-      params.permit(:product_id)
+      params.permit(:product_id, :user_id)
     end
 end

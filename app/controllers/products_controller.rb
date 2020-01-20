@@ -36,6 +36,7 @@ class ProductsController < ApplicationController
 
   # DELETE /products/1
   def destroy
+    puts 'params', params
     @product.destroy
   end
 
