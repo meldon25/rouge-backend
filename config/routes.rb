@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
   resources :wishlists
   resources :products, only: [:index, :show, :destroy] do
   resources :users   
